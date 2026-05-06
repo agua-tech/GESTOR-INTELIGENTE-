@@ -25,7 +25,7 @@
     --yellow: #C08530;
     --orange: #C06030;
 
-    /* ── Estructura ── */
+
     --sidebar-w: 250px;
     --radius:    16px;
     --radius-sm: 10px;
@@ -37,7 +37,7 @@
     --font-display: 'Fraunces', serif;
 }
 
-/* ── Modo oscuro preservado ── */
+
 [data-theme="dark"] {
     --bg:      #1C1410;
     --bg2:     #231A14;
@@ -77,7 +77,6 @@
     border-color: rgba(255, 220, 180, 0.14);
 }
 
-/* ── Fix dark mode: categoría, prioridad y fecha ── */
 [data-theme="dark"] .task-select,
 [data-theme="dark"] .task-date {
     background: rgba(46, 34, 24, 0.90);
@@ -143,7 +142,7 @@ textarea:focus-visible {
     outline-offset: 2px;
 }
 
-/* ══════════════ AUTH ══════════════ */
+
 
 .auth-screen {
     min-height: 100vh;
@@ -267,7 +266,7 @@ textarea:focus-visible {
 .auth-btn:active { transform: translateY(0); box-shadow: none; }
 
 
-/* ══════════════ APP LAYOUT ══════════════ */
+
 
 .app-screen { display: flex; min-height: 100vh; }
 
@@ -336,7 +335,7 @@ textarea:focus-visible {
 .username { font-weight: 600; font-size: 0.9rem; color: var(--text); }
 .user-role { font-size: 0.72rem; color: var(--text3); margin-top: 1px; }
 
-/* ══════════════ COACH IA — CHAT ══════════════ */
+
 
 #coachBox {
     background: var(--bg2);
@@ -396,7 +395,7 @@ textarea:focus-visible {
 }
 .coach-clear-btn:hover { color: var(--accent); background: rgba(92,51,23,0.08); }
 
-/* ── Selector de tono ── */
+
 .coach-tone-row {
     display: flex;
     align-items: center;
@@ -440,7 +439,6 @@ textarea:focus-visible {
     color: var(--text);
 }
 
-/* ── Área de mensajes ── */
 #coachMensajes {
     flex: 1;
     overflow-y: auto;
@@ -455,7 +453,6 @@ textarea:focus-visible {
 #coachMensajes::-webkit-scrollbar-track { background: transparent; }
 #coachMensajes::-webkit-scrollbar-thumb { background: var(--bg3); border-radius: 4px; }
 
-/* ── Burbujas de chat ── */
 .coach-msg {
     max-width: 92%;
     padding: 8px 11px;
@@ -485,7 +482,6 @@ textarea:focus-visible {
     border-left: none;
 }
 
-/* ── Tarjetas de pasos numerados ── */
 .coach-steps-list {
     display: flex;
     flex-direction: column;
@@ -525,7 +521,7 @@ textarea:focus-visible {
     color: var(--text);
 }
 
-/* ── Botones rápidos ── */
+
 .coach-quick-btns {
     display: flex;
     flex-wrap: wrap;
@@ -555,7 +551,7 @@ textarea:focus-visible {
     transform: translateY(-1px);
 }
 
-/* ── Indicador de escritura (typing dots) ── */
+
 .coach-typing {
     display: flex !important;
     gap: 4px;
@@ -579,7 +575,6 @@ textarea:focus-visible {
     40%            { transform: scale(1.1); opacity: 1; }
 }
 
-/* ── Fila de input ── */
 .coach-chat-input-row {
     display: flex;
     align-items: center;
@@ -642,7 +637,7 @@ textarea:focus-visible {
     from { opacity: 0; transform: translateY(6px); }
     to   { opacity: 1; transform: translateY(0); }
 }
-/* ══════════════ SIDEBAR NAV ══════════════ */
+
 
 .sidebar-nav { flex: 1; display: flex; flex-direction: column; gap: 3px; }
 
@@ -712,7 +707,7 @@ textarea:focus-visible {
     color: var(--accent);
 }
 
-/* ══════════════ CATEGORÍAS PERSONALIZADAS ══════════════ */
+
 
 #navCategorias {
     display: flex;
@@ -778,7 +773,7 @@ textarea:focus-visible {
 
 .nav-item-del:hover { background: rgba(192,74,58,0.12); color: var(--red); }
 
-/* ══════════════ SIDEBAR FOOTER ══════════════ */
+
 
 .sidebar-footer {
     display: flex;
@@ -836,7 +831,7 @@ textarea:focus-visible {
     background: rgba(192,74,58,0.06);
 }
 
-/* ══════════════ MAIN CONTENT ══════════════ */
+
 
 .main-content {
     margin-left: var(--sidebar-w);
@@ -854,7 +849,7 @@ textarea:focus-visible {
 .main-content.full { margin-left: 0; }
 
 
-/* ══════════════ TOPBAR ══════════════ */
+
 
 .topbar {
     display: flex;
@@ -928,7 +923,6 @@ textarea:focus-visible {
 
 .search-input::placeholder { color: var(--text3); }
 
-/* .sort-wrap no necesita estilos propios — usa el flex del topbar-right */
 
 .sort-select {
     padding: 10px 14px;
@@ -945,7 +939,7 @@ textarea:focus-visible {
 
 .sort-select:focus { border-color: var(--accent); }
 
-/* ══════════════ HERO FOCUS ══════════════ */
+
 
 .hero-focus {
     margin: 22px 32px 0;
@@ -1076,7 +1070,7 @@ textarea:focus-visible {
 }
 
 
-/* stats-bar eliminado — los datos se muestran en el hero-focus */
+
 .stats-bar { display: none !important; }
 
 .stat-card {
@@ -1138,8 +1132,6 @@ textarea:focus-visible {
 }
 
 
-/* ══════════════ ADD TASK PANEL ══════════════ */
-
 .add-task-panel {
     padding: 20px 32px;
     border-bottom: 1.5px solid rgba(101, 60, 30, 0.10);
@@ -1195,8 +1187,7 @@ textarea:focus-visible {
 
 .task-select:focus, .task-date:focus { border-color: var(--accent); }
 
-/* ── Fix visibilidad del valor en input[type="date"] (WebKit / móvil) ── */
-/* El valor seleccionado se vuelve visible en Chrome Android, Safari iOS y escritorio */
+
 .task-date::-webkit-datetime-edit                { color: var(--text); opacity: 1; }
 .task-date::-webkit-datetime-edit-fields-wrapper { color: var(--text); opacity: 1; }
 .task-date::-webkit-datetime-edit-year-field,
@@ -1219,12 +1210,12 @@ textarea:focus-visible {
     opacity: 0.7;
 }
 
-/* ── Wrapper fecha límite ── */
+
 .date-wrap {
-    display: contents; /* en desktop no cambia el layout */
+    display: contents; 
 }
 
-/* Etiqueta de fecha límite: solo visible en móvil */
+
 .date-label-mobile {
     display: none;
     font-size: 0.78rem;
@@ -1256,7 +1247,7 @@ textarea:focus-visible {
 
 .add-btn:active { transform: translateY(0) scale(0.98); box-shadow: none; }
 
-/* ── Panel de opciones avanzadas ── */
+
 .task-extras {
     display: flex;
     flex-wrap: wrap;
@@ -1265,7 +1256,7 @@ textarea:focus-visible {
     align-items: center;
 }
 
-/* Botón "Opciones" — solo visible en móvil (se muestra vía media query) */
+
 .task-extras-toggle {
     display: none;
     align-items: center;
@@ -1291,7 +1282,7 @@ textarea:focus-visible {
 }
 .task-extras-toggle .lucide { width: 15px; height: 15px; }
 
-/* Hint de atajo de teclado — solo desktop */
+
 .task-hint {
     margin-top: 6px;
     padding: 0 2px;
@@ -1316,7 +1307,7 @@ textarea:focus-visible {
 }
 
 
-/* ══════════════ TASK LIST ══════════════ */
+
 
 .tasks-area { padding: 24px 32px; flex: 1; }
 .task-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
@@ -1510,8 +1501,6 @@ textarea:focus-visible {
 }
 
 
-/* ══════════════ CALENDARIO ══════════════ */
-
 .cal-fab {
     position: fixed;
     bottom: 30px;
@@ -1655,7 +1644,7 @@ textarea:focus-visible {
 .cal-event-item { font-size: 0.78rem; color: var(--text2); padding: 3px 0; }
 
 
-/* ══════════════ CONFIRM ══════════════ */
+
 
 .overlay-confirmacion {
     display: none;
@@ -1699,7 +1688,7 @@ textarea:focus-visible {
 .confirm-no:hover { background: var(--bg3); color: var(--text); }
 
 
-/* ══════════════ TOAST ══════════════ */
+
 
 .toast-container {
     position: fixed;
@@ -1731,7 +1720,7 @@ textarea:focus-visible {
 .toast.error   { border-color: var(--red);   color: var(--red); }
 
 
-/* ══════════════ RECORDATORIOS ══════════════ */
+
 
 .btn-ico.alarm { position: relative; }
 .btn-ico.alarm.activa { background: rgba(192,133,48,0.14); border-color: var(--yellow); color: var(--yellow); }
@@ -1925,7 +1914,6 @@ textarea:focus-visible {
 .alarm-cancel-btn:hover { background: var(--bg3); color: var(--text); }
 
 
-/* ══════════════ ALERTA ALARMA ══════════════ */
 
 .alerta-alarma {
     position: fixed;
@@ -1989,7 +1977,7 @@ textarea:focus-visible {
 .alerta-btn-snooze:hover { background: var(--bg3); color: var(--text); }
 
 
-/* ══════════════ MODAL BIENVENIDA ══════════════ */
+
 
 .bienvenida-overlay {
     display: none;
@@ -2107,7 +2095,6 @@ textarea:focus-visible {
 .bienvenida-skip-btn:hover { background: var(--bg2); color: var(--text); }
 
 
-/* ══════════════ TOUR ══════════════ */
 
 .tour-overlay {
     position: fixed;
@@ -2217,8 +2204,6 @@ textarea:focus-visible {
 }
 
 
-/* ══════════════ SUGERENCIAS ══════════════ */
-
 .sugerencias-panel {
     position: fixed;
     bottom: 96px;
@@ -2273,7 +2258,6 @@ textarea:focus-visible {
 .sugerencias-texto { padding: 13px 16px 18px; font-size: 0.88rem; color: var(--text); line-height: 1.60; }
 
 
-/* ══════════════ MODAL DESCRIPCIÓN ══════════════ */
 
 .desc-modal-overlay {
     display: none;
@@ -2340,7 +2324,6 @@ textarea:focus-visible {
 .desc-modal-footer { display: flex; gap: 10px; padding: 16px 24px 22px; border-top: 1.5px solid var(--border); }
 
 
-/* ══════════════ ANIMACIONES ══════════════ */
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
@@ -2350,8 +2333,6 @@ textarea:focus-visible {
 
 .nav-item-anim { animation: catIn 0.25s cubic-bezier(0.4,0,0.2,1) both; }
 
-
-/* ══════════════ RESPONSIVE ══════════════ */
 
 @media (max-width: 900px) {
     .hero-focus {
@@ -2405,7 +2386,6 @@ textarea:focus-visible {
     }
 }
 
-/* ── Coach API Key row ── */
 .coach-apikey-row {
     display: flex;
     gap: 4px;
@@ -2439,7 +2419,7 @@ textarea:focus-visible {
     background: var(--border);
 }
 
-/* ══════════════ COACH MODO ENFOQUE ══════════════ */
+
 .coach-header-actions {
     display: flex;
     align-items: center;
@@ -2490,11 +2470,6 @@ textarea:focus-visible {
 }
 
 
-/* ══════════════════════════════════════════════════
-   NUEVOS ESTILOS — refactoring UI (sin alterar lógica)
-   ══════════════════════════════════════════════════ */
-
-/* ── Toggle show/hide password ── */
 .pass-wrap {
     position: relative;
     display: flex;
@@ -2524,7 +2499,7 @@ textarea:focus-visible {
 
 .pass-toggle:hover { color: var(--accent); }
 
-/* ── Botón "Asistente" en topbar ── */
+
 .ia-open-btn {
     display: flex;
     align-items: center;
@@ -2557,7 +2532,6 @@ textarea:focus-visible {
     .ia-open-btn { padding: 8px 10px; }
 }
 
-/* ── Botón "⚙️" en sidebar-footer ── */
 .config-open-btn {
     font-size: 1.1rem;
     background: none;
@@ -2725,7 +2699,7 @@ textarea:focus-visible {
     letter-spacing: 0.6px;
 }
 
-/* la apikey-row en config modal ocupa todo el ancho */
+
 .config-apikey-row {
     padding: 0 !important;
     gap: 6px !important;
@@ -2810,11 +2784,7 @@ textarea:focus-visible {
 }
 
 
-/* ══════════════════════════════════════════════════
-   SPOTLIGHT TOUR V2
-   ══════════════════════════════════════════════════ */
 
-/* ── Overlay con hueco SVG ── */
 .spot-overlay {
     display: none;
     position: fixed;
@@ -2842,7 +2812,7 @@ textarea:focus-visible {
     fill: rgba(8, 4, 2, 0.84);
 }
 
-/* ── Elemento enfocado: resaltado sobre el overlay ── */
+
 .spot-highlighted {
     position: relative !important;
     z-index: 801 !important;
@@ -2851,11 +2821,7 @@ textarea:focus-visible {
     pointer-events: none !important;
 }
 
-/* ══════════════════════════════════════════════════════
-   SPOTLIGHT TOUR — Responsive redesign (mobile-first)
-   ══════════════════════════════════════════════════════ */
 
-/* ── Tarjeta tooltip del tour ── */
 .spot-card {
     display: none;
     position: fixed;
@@ -2893,7 +2859,7 @@ textarea:focus-visible {
     flex-shrink: 0;
 }
 
-/* ── Cabecera: badge + botón cerrar ── */
+
 .spot-card-top {
     display: flex;
     align-items: center;
@@ -2942,7 +2908,7 @@ textarea:focus-visible {
     border-color: rgba(192, 74, 58, 0.28);
 }
 
-/* ── Icono / título / descripción ── */
+
 .spot-card-icon {
     text-align: center;
     font-size: 1.9rem;
@@ -2969,11 +2935,7 @@ textarea:focus-visible {
     line-height: 1.58;
 }
 
-/* ══ NAVEGACIÓN — Mobile-first ══
-   Orden visual en móvil:
-     fila 1: dots (centrados, ancho completo)
-     fila 2: [Anterior  pequeño]  [Siguiente  ancho]
-*/
+
 .spot-card-nav {
     display: flex;
     flex-wrap: wrap;          /* permite romperse en 2 filas */
@@ -3007,7 +2969,6 @@ textarea:focus-visible {
     justify-content: center;
 }
 
-/* ── Botones base ── */
 .spot-btn {
     padding: 10px 16px;
     border-radius: var(--radius-sm);
@@ -3031,7 +2992,7 @@ textarea:focus-visible {
 .spot-btn-prev:hover { background: var(--bg3); color: var(--text); }
 .spot-btn-prev:disabled { opacity: 0.35; cursor: not-allowed; }
 
-/* Ocultar texto "Anterior" en móvil → solo icono */
+
 .spot-btn-prev .spot-btn-text { display: none; }
 
 .spot-btn-next {
@@ -3045,7 +3006,7 @@ textarea:focus-visible {
 .spot-btn-next:hover  { background: var(--accent2); transform: translateY(-1px); }
 .spot-btn-next:active { transform: translateY(0); }
 
-/* ── Puntos de progreso ── */
+
 .spot-dot {
     width: 6px;
     height: 6px;
@@ -3063,7 +3024,6 @@ textarea:focus-visible {
     border-color: var(--accent);
 }
 
-/* ── Botón saltar ── */
 .spot-card-saltar {
     display: block;
     width: calc(100% - 28px);
@@ -3084,7 +3044,7 @@ textarea:focus-visible {
     background: rgba(192, 74, 58, 0.07);
 }
 
-/* ── Transición suave del hueco SVG ── */
+
 #spotHole {
     transition: x      0.38s cubic-bezier(0.4, 0, 0.2, 1),
                 y      0.38s cubic-bezier(0.4, 0, 0.2, 1),
@@ -3092,10 +3052,9 @@ textarea:focus-visible {
                 height 0.38s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ══ MOBILE: anclar la card al fondo, ancho fluido ══ */
+
 @media (max-width: 767px) {
-    /* Anclar abajo y centrar horizontalmente,
-       sobreescribiendo los valores inline que pone el JS */
+
     .spot-card {
         left:   50%  !important;
         top:    auto !important;
@@ -3108,9 +3067,9 @@ textarea:focus-visible {
     }
 }
 
-/* ══ TABLET / DESKTOP: modal más ancho, layout horizontal ══ */
+
 @media (min-width: 768px) {
-    /* Card: más ancha, con mínimo definido */
+
     .spot-card {
         width: clamp(560px, 46vw, 680px);
         border-radius: 24px;
@@ -3125,12 +3084,9 @@ textarea:focus-visible {
     .spot-card-title  { font-size: 1.1rem; padding: 6px 28px 4px; }
     .spot-card-desc   { font-size: 0.88rem; padding: 4px 28px 16px; }
 
-    /* ── Nav horizontal: prev | dots(izquierda) | next ──
-       Orden visual en desktop:
-         [← Anterior]  ●●●●●●●●●●  [Siguiente →]
-    */
+   
     .spot-card-nav {
-        flex-wrap: nowrap;          /* una sola fila */
+        flex-wrap: nowrap;         
         justify-content: space-between;
         padding: 0 22px;
         gap: 14px;
@@ -3138,11 +3094,11 @@ textarea:focus-visible {
         align-items: center;
     }
 
-    /* Dots: alineados a la izquierda (centro del espacio libre) */
+   
     .spot-dots {
-        order: 1;          /* entre prev(0) y next(2) */
-        flex: 1;           /* consume espacio disponible */
-        flex-basis: auto;  /* quitar el 100% del modo móvil */
+        order: 1;          
+        flex: 1;           
+        flex-basis: auto;  
         justify-content: flex-start;
         padding: 0;
     }
@@ -3150,7 +3106,7 @@ textarea:focus-visible {
     .spot-btn-prev { order: 0; flex: 0 0 auto; }
     .spot-btn-next { order: 2; flex: 0 0 auto; }
 
-    /* Restaurar texto "Anterior" en desktop */
+
     .spot-btn-prev .spot-btn-text { display: inline; }
 
     .spot-btn      { padding: 10px 20px; font-size: 0.86rem; }
@@ -3163,7 +3119,7 @@ textarea:focus-visible {
     }
 }
 
-/* ══ DESKTOP GRANDE: modal máximo ══ */
+
 @media (min-width: 1024px) {
     .spot-card {
         width: clamp(620px, 40vw, 720px);
@@ -3178,9 +3134,7 @@ textarea:focus-visible {
     .spot-card-saltar { width: calc(100% - 52px); margin: 0 26px; }
 }
 
-/* ══════════════════════════════════════════════
-   SISTEMA DE ENERGÍA — tags en tareas
-   ══════════════════════════════════════════════ */
+
 
 .tag-energia-alta {
     background: rgba(61, 90, 200, 0.12);
@@ -3207,10 +3161,6 @@ textarea:focus-visible {
     min-width: 140px;
 }
 
-/* ══════════════════════════════════════════════
-   BOTÓN MODO HOY — topbar
-   ══════════════════════════════════════════════ */
-
 .modo-hoy-btn {
     display: flex;
     align-items: center;
@@ -3232,9 +3182,6 @@ textarea:focus-visible {
 }
 .modo-hoy-btn:active { transform: translateY(0); }
 
-/* ══════════════════════════════════════════════
-   SUGERENCIAS — botón CTA
-   ══════════════════════════════════════════════ */
 
 .sugerencias-cta {
     display: block;
@@ -3250,9 +3197,6 @@ textarea:focus-visible {
 }
 .sugerencias-cta:hover { background: var(--accent2); }
 
-/* ══════════════════════════════════════════════
-   MODAL MODO HOY
-   ══════════════════════════════════════════════ */
 
 .modo-hoy-overlay {
     display: none;
@@ -3458,11 +3402,7 @@ textarea:focus-visible {
     .modo-hoy-card { max-height: 92vh; }
 }
 
-/* ══════════════════════════════════════════════
-   RONDA 2 — SUBTAREAS, TIEMPO ESTIMADO, POMODORO
-   ══════════════════════════════════════════════ */
 
-/* ── Botón IA subtareas ── */
 .btn-ico.subtask-ia {
     background: linear-gradient(135deg, rgba(92,51,23,0.12), rgba(92,51,23,0.06));
     border-color: rgba(92,51,23,0.22);
@@ -3501,7 +3441,7 @@ textarea:focus-visible {
     border-color: rgba(44,179,192,0.3);
 }
 
-/* ── Zona de subtareas ── */
+
 .subtareas-zona {
     padding: 8px 12px 4px 40px;
     border-top: 1px dashed var(--border);
@@ -3613,7 +3553,6 @@ textarea:focus-visible {
     color: var(--text);
 }
 
-/* ── POMODORO WIDGET ── */
 .pomodoro-widget {
     display: none;
     flex-direction: column;
@@ -3708,7 +3647,7 @@ textarea:focus-visible {
     transform: scale(1.12);
 }
 
-/* Separador encima del pomodoro en modo expandido */
+
 #coachBox.expandido .pomodoro-widget {
     max-width: 280px;
     align-self: center;
@@ -3720,11 +3659,7 @@ textarea:focus-visible {
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ══════════════════════════════════════════════
-   LUCIDE ICONS — tamaños y alineación
-   ══════════════════════════════════════════════ */
 
-/* Base */
 .lucide {
     display: inline-block;
     vertical-align: middle;
@@ -3734,7 +3669,6 @@ textarea:focus-visible {
     height: 16px;
 }
 
-/* Contextos específicos */
 .hamburger .lucide                  { width: 20px; height: 20px; }
 .search-ico .lucide                 { width: 14px; height: 14px; }
 .theme-toggle .lucide               { width: 18px; height: 18px; }
@@ -3767,13 +3701,6 @@ textarea:focus-visible {
 .desc-modal-header span .lucide     { width: 20px; height: 20px; }
 
 
-/* ══════════════════════════════════════════════════════════════
-   ARQUITECTURA RESPONSIVE PROFESIONAL — v2.0
-   Añadido: Bottom Nav · Sidebar Backdrop · Swipe UI
-   Modal Progreso · Breakpoints 768/1024 · Atajos teclado hints
-   ══════════════════════════════════════════════════════════════ */
-
-/* ── Sidebar backdrop (mobile overlay) ── */
 .sidebar-backdrop {
     display: none;
     position: fixed;
@@ -3788,7 +3715,7 @@ textarea:focus-visible {
 
 .sidebar-backdrop.visible { display: block; }
 
-/* ── Bottom Navigation Bar ── */
+
 .bottom-nav {
     display: none;
     position: fixed;
@@ -3850,7 +3777,7 @@ textarea:focus-visible {
     white-space: nowrap;
 }
 
-/* FAB central */
+
 .bnav-fab {
     width: 54px;
     height: 54px;
@@ -3864,7 +3791,7 @@ textarea:focus-visible {
     box-shadow: 0 4px 20px rgba(92, 51, 23, 0.45), 0 2px 8px rgba(92, 51, 23, 0.25);
     transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.22s;
     flex-shrink: 0;
-    margin-bottom: 14px; /* float above bar */
+    margin-bottom: 14px; 
     line-height: 1;
 }
 
@@ -3873,7 +3800,6 @@ textarea:focus-visible {
     box-shadow: 0 2px 10px rgba(92, 51, 23, 0.35);
 }
 
-/* ── Swipe feedback visual ── */
 .task-item {
     touch-action: pan-y;
     will-change: transform;
@@ -3889,7 +3815,7 @@ textarea:focus-visible {
     border-color: rgba(192, 133, 48, 0.28) !important;
 }
 
-/* ── Modal Progreso ── */
+
 .progreso-overlay {
     display: none;
     position: fixed;
@@ -4069,7 +3995,7 @@ textarea:focus-visible {
     box-shadow: 0 0 10px rgba(92, 51, 23, 0.2);
 }
 
-/* ── Dark mode overrides ── */
+
 [data-theme="dark"] .bottom-nav {
     background: rgba(46, 34, 24, 0.97);
     border-top-color: rgba(255, 220, 180, 0.09);
@@ -4086,11 +4012,7 @@ textarea:focus-visible {
     border-color: rgba(201, 120, 64, 0.22);
 }
 
-/* ══════════════════════════════════════════════
-   BREAKPOINTS RESPONSIVE
-   ══════════════════════════════════════════════ */
 
-/* ── TABLET: 769px – 1024px ── */
 @media (max-width: 1024px) and (min-width: 769px) {
     :root { --sidebar-w: 220px; }
     .topbar    { padding: 16px 24px; }
@@ -4101,18 +4023,18 @@ textarea:focus-visible {
     .bottom-bar { padding: 16px 24px; }
 }
 
-/* ── MOBILE: ≤ 768px ── */
+
 @media (max-width: 768px) {
 
-    /* Show bottom nav */
+  
     .bottom-nav { display: flex; }
 
-    /* Push content above bottom nav */
+   
     .main-content { margin-left: 0 !important; padding-bottom: 80px; }
 
-    /* Floating elements: lift above bottom nav */
+   
     .toast-container      { bottom: 84px !important; }
-    /* cal-fab: pegado a la esquina inferior derecha, encima de la bottom-nav */
+
     .cal-fab {
         bottom: 90px !important;
         right: 16px  !important;
@@ -4124,14 +4046,14 @@ textarea:focus-visible {
     .sugerencias-panel    { bottom: 84px !important; right: 12px; width: calc(100vw - 24px); }
     .alerta-alarma        { top: 16px; right: 12px; bottom: auto; }
 
-    /* Sidebar: off-canvas by default */
+    
     .sidebar {
         transform: translateX(calc(-1 * var(--sidebar-w)));
         z-index: 200;
     }
     .sidebar.open { transform: translateX(0); }
 
-    /* ── Compact topbar ── */
+   
     .topbar {
         padding: 12px 16px;
         gap: 8px;
@@ -4143,13 +4065,13 @@ textarea:focus-visible {
     .sort-wrap    { display: none; }
     .search-input { width: 100px; }
 
-    /* Hide text labels on IA buttons */
+   
     .ia-open-btn .ia-btn-txt   { display: none; }
     .modo-hoy-btn .ia-btn-txt  { display: none; }
     .ia-open-btn   { padding: 8px 10px; }
     .modo-hoy-btn  { padding: 8px 10px; }
 
-    /* ── 1. Hero focus — compacto ── */
+
     .hero-focus {
         margin: 12px 16px 0;
         padding: 16px;
@@ -4161,15 +4083,14 @@ textarea:focus-visible {
     .hero-kicker     { font-size: 0.65rem; }
     .hero-pill       { padding: 8px 10px; font-size: 0.72rem; }
 
-    /* ── 2. Formulario: input rápido + extras colapsables ── */
+  
     .add-task-panel {
         padding: 12px 16px 10px;
         border-bottom: none;
     }
 
-    /* Fila principal: input + toggle + agregar */
     .add-task-row {
-        flex-wrap: nowrap;  /* una sola fila limpia */
+        flex-wrap: nowrap;  
         gap: 8px;
         padding: 10px 12px;
         border-radius: 14px;
@@ -4177,23 +4098,22 @@ textarea:focus-visible {
 
     .task-input {
         flex: 1;
-        min-width: 0;       /* permite que se encoja */
+        min-width: 0;      
         padding: 11px 14px;
         font-size: 0.92rem;
     }
 
-    /* Mostrar botón de opciones solo en móvil */
+    
     .task-extras-toggle { display: inline-flex; }
 
-    /* Botón Agregar: más compacto en móvil */
     .add-btn {
         padding: 10px 16px;
         font-size: 0.88rem;
         flex-shrink: 0;
-        width: auto;           /* no full-width en la fila */
+        width: auto;           
     }
 
-    /* Panel de extras: oculto por defecto, visible al abrir */
+   
     .task-extras {
         display: none;
         flex-direction: column;
@@ -4211,12 +4131,12 @@ textarea:focus-visible {
         to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* Cuando el panel está abierto */
+
     .add-task-panel.extras-open .task-extras {
         display: flex;
     }
 
-    /* Cada campo ocupa el ancho completo dentro del panel */
+
     .task-extras .task-select,
     .task-extras .task-date {
         width: 100%;
@@ -4224,25 +4144,25 @@ textarea:focus-visible {
         padding: 10px 12px;
     }
 
-    /* Wrapper de fecha: bloque independiente en móvil */
+
     .task-extras .date-wrap {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    /* Mostrar etiqueta "Fecha límite" en móvil */
+
     .date-label-mobile {
         display: block;
     }
 
-    /* Ocultar hint de teclado en móvil (incluyendo la «N») */
+   
     .task-hint { display: none !important; }
 
-    /* ── 3. Lista de tareas ── */
+   
     .tasks-area { padding: 12px 16px; }
 
-    /* ── 4. Estadísticas debajo del contenido: grid 2×2 compacto ── */
+    
     .stats-bar {
         grid-template-columns: repeat(2, 1fr);
         gap: 8px;
@@ -4257,15 +4177,15 @@ textarea:focus-visible {
         border-radius: 14px;
     }
 
-    /* Números más compactos */
+    
     .stat-num { font-size: 1.6rem; }
     #statTotal .stat-num { font-size: 1.8rem; }
     .stat-lbl { font-size: 0.66rem; letter-spacing: 0.4px; }
 
-    /* ── 5. Bottom bar ── */
+
     .bottom-bar { padding: 10px 16px 12px; }
 
-    /* ── 6. Mocoa modal: full-screen ── */
+    
     .mocoa-overlay {
         padding: 0;
         align-items: stretch;
@@ -4283,7 +4203,7 @@ textarea:focus-visible {
         flex: 1;
     }
 
-    /* ── 7. Modo Hoy: bottom sheet ── */
+   
     .modo-hoy-overlay {
         padding: 0;
         align-items: flex-end;
@@ -4296,7 +4216,7 @@ textarea:focus-visible {
         animation: slideUp 0.32s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    /* ── 8. Calendario: bottom sheet ── */
+   
     .calendar-panel {
         right: 0; left: 0;
         width: 100%;
@@ -4305,7 +4225,7 @@ textarea:focus-visible {
     }
 }
 
-/* ── EXTRA SMALL: ≤ 420px ── */
+
 @media (max-width: 420px) {
     .topbar-right .search-wrap { display: none; }
     .hero-title  { font-size: 1.22rem; }
@@ -4315,7 +4235,7 @@ textarea:focus-visible {
     .hero-focus-grid { gap: 6px; }
 }
 
-/* ── Desktop: keyboard shortcut hints ── */
+
 @media (min-width: 769px) {
     .task-input::placeholder::after {
         content: ' (N)';
@@ -4323,7 +4243,7 @@ textarea:focus-visible {
         opacity: 0.5;
     }
 
-    /* Hover effects for desktop */
+   
     .task-item:hover {
         box-shadow: var(--shadow), inset 0 0 0 1px rgba(92, 51, 23, 0.07);
     }
@@ -4340,11 +4260,7 @@ textarea:focus-visible {
 }
 
 
-/* ══════════════════════════════════════════════════════
-   SISTEMA DE ATAJOS DE TECLADO — UI COMPONENTS
-   ══════════════════════════════════════════════════════ */
 
-/* ── kbd badge en botones (desktop) ── */
 .ks-badge {
     display: inline-flex;
     align-items: center;
@@ -4368,10 +4284,9 @@ textarea:focus-visible {
 
 button:hover .ks-badge { opacity: 1; }
 
-/* Ocultar badges en mobile */
 @media (max-width: 768px) { .ks-badge { display: none; } }
 
-/* ── Botón "?" de ayuda ── */
+
 .ks-help-btn {
     display: flex;
     align-items: center;
@@ -4537,7 +4452,7 @@ button:hover .ks-badge { opacity: 1; }
     border: 1px solid var(--border);
 }
 
-/* ── Onboarding tip ── */
+
 .ks-onboarding {
     position: fixed;
     bottom: 100px;
@@ -4599,7 +4514,7 @@ button:hover .ks-badge { opacity: 1; }
     .ks-onboarding { bottom: 80px; font-size: 0.82rem; padding: 10px 14px; }
 }
 
-/* ── Indicador contextual en empty state ── */
+
 .ks-empty-cta {
     margin-top: 14px;
     display: inline-flex;
@@ -4646,23 +4561,17 @@ button:hover .ks-badge { opacity: 1; }
     50%       { opacity: 1; }
 }
 
-/* dark mode tweaks */
+
 [data-theme="dark"] .ks-key      { background: rgba(56,42,30,0.9); }
 [data-theme="dark"] .ks-row      { background: rgba(56,42,30,0.6); }
 [data-theme="dark"] .ks-modal-card { background: rgba(36,26,18,0.98); }
 [data-theme="dark"] .ks-onboarding { background: rgba(36,26,18,0.98); }
 
 
-/* ══════════════════════════════════════════════════════
-   MOBILE CLEAN-UP v2 — Tour fix + extras refinements
-   ══════════════════════════════════════════════════════ */
 
 @media (max-width: 768px) {
 
-    /* ── 1. Stats-bar ahora se muestra debajo del contenido
-            (no ocultar — se reubicó en el HTML) ── */
-
-    /* ── 2. Hero más compacto (refuerzo) ── */
+   
     .hero-focus {
         margin: 10px 14px 0;
         padding: 14px 16px;
@@ -4672,11 +4581,9 @@ button:hover .ks-badge { opacity: 1; }
     .hero-focus-grid { gap: 6px; }
     .hero-pill   { padding: 8px 10px; font-size: 0.72rem; }
 
-    /* ── 3. Formulario: refuerzo de compacidad ── */
     .add-task-panel { padding: 10px 14px 10px; }
     .add-task-row   { gap: 7px; padding: 10px 12px; }
 
-    /* ── 4. Sidebar backdrop ── */
     .sidebar-backdrop {
         display: none;
         position: fixed;
@@ -4689,7 +4596,7 @@ button:hover .ks-badge { opacity: 1; }
     }
     .sidebar-backdrop.visible { display: block; }
 
-    /* ── 5. Sidebar off-canvas ── */
+  
     .sidebar {
         transform: translateX(calc(-1 * var(--sidebar-w)));
         z-index: 200;
@@ -4697,17 +4604,17 @@ button:hover .ks-badge { opacity: 1; }
     }
     .sidebar.open { transform: translateX(0); }
 
-    /* ── 6. Ocultar Asistente del topbar (ya está en bottom nav) ── */
+  
     .ia-open-btn { display: none !important; }
 
-    /* ── 7. Tour overlay SIEMPRE encima del sidebar ── */
+    
     .spot-overlay { z-index: 900 !important; }
     .spot-card    { z-index: 902 !important; }
 
-    /* En mobile, el sidebar resaltado NO sube sobre el overlay */
+
     .sidebar.spot-highlighted { z-index: 210 !important; }
 
-    /* ── 8. Íconos del tour en móvil ── */
+
     .spot-card-skip .lucide { width: 15px; height: 15px; }
     .spot-btn .lucide       { width: 15px; height: 15px; }
 }
